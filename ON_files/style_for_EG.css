@@ -1,0 +1,167 @@
+body {
+  font-family: "Markazi Text", sans-serif;
+  color: #212121;
+  background: #ededed;
+}
+
+body {
+  text-align: right;
+}
+
+section.auth-area {
+  background-image: url(../ON_files/image/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+  height: 760px;
+  position: relative;
+  padding-top: 45px;
+}
+
+.auth-result.card.testimonial-card.counter {
+  position: relative;
+  background: url(../ON_files/image/download.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0px;
+  border-radius: 20px;
+  margin-bottom: 5%;
+  z-index: 1;
+}
+
+.store-locator-form select {
+  text-align-last: right;
+}
+
+.store-locator-form label {
+  font-size: 18px;
+}
+
+.auth-form input[type="text"],
+.store-locator-form input[type="text"],
+.store-locator-form textarea {
+  font-size: 18px;
+}
+
+.auth-form-area h2 {
+  font-family: "Markazi Text", sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.auth-form-area p {
+  font-size: 18px;
+  font-family: "Markazi Text", sans-serif;
+  margin-bottom: 25px;
+}
+
+.auth-result h3 {
+  color: #212121;
+  font-family: Markazi Text;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+.auth-result .auth-status {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-family: Markazi Text;
+}
+
+.tips-heading h2 {
+  text-transform: uppercase;
+  display: inline-block;
+  font-family: "Markazi Text", sans-serif;
+}
+
+.tips-heading h2 span.color {
+  font-family: "Markazi Text", sans-serif;
+  color: #d4b26e;
+  border-left: 1px solid #d4b26e;
+  display: inline-block;
+}
+
+.tips-heading h2 span {
+  padding-left: 30px;
+}
+
+.contact-heading h2 {
+  font-family: "Markazi Text", sans-serif;
+  font-size: 45px;
+  color: #212121;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  margin-top: 45px;
+}
+
+.auth-form .true-strength-auth-btn {
+  border-radius: 2px;
+  font-family: "Markazi Text", sans-serif;
+  margin-top: 20px;
+}
+
+.location-info h3 {
+  font-family: "Markazi Text", sans-serif;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.location-info p {
+  color: #5e5e5e;
+  font-family: "Markazi Text", sans-serif;
+}
+
+.store-locator-heading h2 {
+  font-family: "Markazi Text", sans-serif;
+  font-size: 55px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.store-locator-heading p {
+  font-size: 24px;
+  font-family: "Markazi Text", sans-serif;
+  color: #ffffff;
+}
+
+.on-navbar-nav li a {
+  padding-right: 20px !important;
+  padding-left: 20px !important;
+  font-size: 20px;
+}
+
+.auth-tips-product-items p {
+  font-size: 20px !important;
+}
+
+.form-control {
+  text-align: right;
+}
+
+.tips-item ul li {
+  font-size: 18px;
+}
+
+.footer-social p {
+  font-size: 18px;
+}
+
+.footer-text p {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.true-strength-store-locator-search-btn,
+.true-strength-store-locator-search-btn:hover,
+.true-strength-store-locator-search-btn:focus,
+.auth-form .true-strength-auth-btn {
+  font-size: 20px;
+}

@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="eg">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <base href="." />
+    <meta name="csrf-token" content="{{ csrf_token }}" />
+
+    <title>تأكد من مصداقية ON</title>
+    <link rel="shortcut icon" href="https://originalon.com/assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./ON_files/all.min.css" />
+    <link href="./ON_files/bootstrap.min.css" rel="stylesheet" />
+    <link href="./ON_files/font-awesome.min.css" rel="stylesheet" />
+    <link href="./ON_files/intlTelInput.css" rel="stylesheet" />
+    <link href="./ON_files/common.css" rel="stylesheet" />
+    <link href="./ON_files/style_for_EG.css" rel="stylesheet" />
+
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6Lecl7sqAAAAAGFUOaFUcsK6QggxDklMdImD4-rn"></script>
+    <script src="./ON_files/jquery.min.js.download"></script>
+    <script src="./ON_files/bootstrap.min.js.download"></script>
+    <script src="./ON_files/additional-methods.min.js.download"></script>
+    <script src="./ON_files/contact-form.js.download"></script>
+
+    <style>
+		img {
+		  max-width: 100%;
+		  height: auto;
+		}
+		@media (max-width: 768px) {
+		  img {
+			display: block;
+			width: 100%;
+		  }
+		}
+    #resultMessage {
+        font-size: 16px;
+        padding: 10px;
+        margin-top: 10px;
+        display: none; /* مخفي افتراضيًا */
+    }
+
+	  </style>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <header class="header">
+        <div class="container-fluid">
+          <nav class="navbar navbar-default on-navbar">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only"> TOGGLE_NAV</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a href="https://originalon.com/#" class="navbar-brand logo smooth-scroll">
+                  <img src="./ON_files/logo.png" /><span class="logo-text">100% أصلي</span>
+                </a>
+              </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right on-navbar-nav">
+                  <li><a href="#22222" class="smooth-scroll">نصائح للتأكد من مصداقية</a></li>
+                  <li><a href="3" class="smooth-scroll">تاجر معتمد</a></li>
+                  <li><a href="#contact-us" class="smooth-scroll">تواصل معنا</a></li>
+                  <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                      <img src="./Authenticate ON_files/EG.jpg">
+                      <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu multi-level">
+                      <li class="dropdown-submenu">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="./Authenticate ON_files/TR.jpg"> Turkey</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="https://originalon.com/TR">Türkçe</a></li>
+                          <li><a href="https://originalon.com/TR/EN">English</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="./Authenticate ON_files/EG.jpg"> Egypt</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="https://originalon.com/EG">عربى</a></li>
+                          <li><a href="https://originalon.com/EG/EN">English</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="./Authenticate ON_files/AE.jpg"> UAE</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="https://originalon.com/AE">عربى</a></li>
+                          <li><a href="https://originalon.com/AE/EN">English</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="./Authenticate ON_files/SA.jpg"> KSA</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="https://originalon.com/SA">عربى</a></li>
+                          <li><a href="https://originalon.com/SA/EN">English</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="./Authenticate ON_files/IQ.jpg"> Iraq</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="https://originalon.com/IQ">عربى</a></li>
+                          <li><a href="https://originalon.com/IQ/EN">English</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="./Authenticate ON_files/JO.jpg"> Jordan</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="https://originalon.com/JO">عربى</a></li>
+                          <li><a href="https://originalon.com/JO/EN">English</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="./Authenticate ON_files/LB.jpg"> Lebanon</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="https://originalon.com/LB">عربى</a></li>
+                          <li><a href="https://originalon.com/LB/EN">English</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="./Authenticate ON_files/PS.jpg"> Palestine</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="https://originalon.com/PS">عربى</a></li>
+                          <li><a href="https://originalon.com/PS/EN">English</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="./Authenticate ON_files/DZ.jpg"> Algeria</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="https://originalon.com/DZ">عربى</a></li>
+                          <li><a href="https://originalon.com/DZ/EN">English</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="./Authenticate ON_files/MA.jpg"> Morocco</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="https://originalon.com/MA">عربى</a></li>
+                          <li><a href="https://originalon.com/MA/EN">English</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="./Authenticate ON_files/TN.jpg"> Tunisia</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="https://originalon.com/TN">عربى</a></li>
+                          <li><a href="https://originalon.com/TN/EN">English</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="border-bottom: none !important;"><img src="./Authenticate ON_files/LY.jpg"> Libya</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="https://originalon.com/LY">عربى</a></li>
+                          <li><a href="https://originalon.com/LY/EN">English</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="border-bottom: none !important;"><img src="./Authenticate ON_files/QA.jpg"> Qatar</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="https://originalon.com/QA">عربى</a></li>
+                          <li><a href="https://originalon.com/QA/EN">English</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li
+
+                  
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <section class="auth-area">
+        <div class="container-fluid">
+          <div class="row auth-row">
+            <div class="col-sm-offset-1 col-sm-5 col-no-right-padding">
+              <div class="auth-form-area sgmyauth">
+                <h2>مصداقية المنتج</h2>
+                <p>الرجاء إدخال رمز المنتج السري من ملصق التحقق على العبوة</p>
+
+                <div class="auth-form">
+                  <form id="code_check" novalidate="novalidate">
+                    <input type="hidden" name="country" value="EG" />
+                    <div class="form-group" style="width: 304px">
+                        <input type="text" class="form-control" maxlength="9" name="code" placeholder="أدخل رمز المنتج الخاص بك" required />
+                    </div>
+                    <div class="form-group" style="width: 304px">
+                        <input type="text" class="form-control" name="name" placeholder="من فضلك أدخل اسمك" required />
+                    </div>
+                    <div class="form-group" style="width: 304px">
+                        <input type="email" class="form-control" name="email" placeholder="يرجى إدخال بريدك" required />
+                    </div>
+            
+                    <div class="mainword">
+                        <p style="font-size: 15px">
+                            <input type="checkbox" style="cursor: pointer" name="agree" id="agreesgmy" />
+                            أوافق على استلام عروض ترويجية من عبر البريد الإلكتروني
+                        </p>
+                    </div>
+                    <button type="submit" class="btn true-strength-btn true-strength-auth-btn">
+                        التحقق
+                    </button>
+                    <div id="resultMessage" class="result-message">
+                        <img id="resultImage" src="" alt="نتيجة التحقق" />
+                        <p id="resultText"></p>
+                    </div>
+                </form>
+                </div>
+				<div id="resultMessage" class="alert alert-success" style="display: none;"></div>
+              </div>
+            </div>
+
+            <div class="col-sm-5 col-no-left-padding changealert">
+              <div class="auth-result-wrapper">
+                <div id="message_card" class="auth-result card testimonial-card" style="display: none">
+                  <h3>مصداقية المنتج</h3>
+                  <span class="auth-status">--</span>
+                  <div class="avatar">
+                    <img src="https://originalon.com/" />
+                  </div>
+                  <div class="card-up indigo lighten-1">
+                    <p>---</p>
+                  </div>
+                </div>
+
+                <div class="auth-result card testimonial-card counter">
+                  <h3><b>NUMBER OF VERIFICATIONS DONE</b></h3>
+                  <br />
+                  <div id="verifyCount" class="text-center text-light">
+                    <span class="number">1</span><span class="number">4</span><span class="number">3</span><span class="number">1</span><span class="number">6</span><span class="number">5</span>
+                  </div>
+                  <br />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+	  
+      <section id="22222" class="product-auth-tips" >
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5">
+              <div class="tips-item">
+                <ul>
+                  <li>
+                    تُقبل المنتجات فقط مع ملصق التوثيق
+                    <span class="fa fa-check"></span>
+                  </li>
+                  <li>
+                    لا تقبل المنتجات التي تحمل ملصقات تم إيقافها
+                    <span class="fa fa-check"></span>
+                  </li>
+                  <li>
+                    اطلب استرجاعاً إذا كان منتجك لا يتحقق من موقع الويب
+                    <span class="fa fa-check"></span>
+                  </li>
+                  <li>
+                    اشترِ فقط من بائعين معتمدين
+                    <span class="fa fa-check"></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-7">
+              <div class="tips-heading text-left">
+                <h2>
+                  <br />
+                  <span class="color">نصائح للتأكد من مصداقية</span><br />
+                  <span> المنتج</span>
+                </h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="auth-tips-product-area">
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="auth-tips-product-items">
+                  <p>تحقق من ملصق المصداقية</p>
+                  <img src="./ON_files/pr1-rev.png" />
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="auth-tips-product-items">
+                  <p>تحقق من الكود على الموقع</p>
+                  <iframe
+                    style="width: 100%; height: 226px; border: none"
+                    src="./ON_files/pjUd5A7vCYw.html"
+                    frameborder="0"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen=""
+                  ></iframe>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="auth-tips-product-items">
+                  <p>اشترِ من بائعين معتمدين فقط</p>
+                  <img src="./ON_files/EG(1).jpg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact-us" class="contect-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="contact-heading text-center">
+                <h2>تواصل معنا</h2>
+              </div>
+            </div>
+          </div>
+
+          <form id="contactUs" novalidate="novalidate">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="store-locator-form">
+                      <div class="form-group">
+                        <label for="">اختر الفئة</label>
+                        <select class="form-control" name="category">
+                          <option>موثوقية</option>
+                          <option>متجر</option>
+                          <option>آخر</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="store-locator-form">
+                      <div class="form-group">
+                        <label for="">الاسم الكامل</label>
+                        <input
+                          type="text"
+                          name="name"
+                          class="form-control"
+                          id=""
+                          placeholder="من فضلك أدخل اسمك"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="store-locator-form">
+                      <div class="form-group">
+                        <label for="">بريدك</label>
+                        <input
+                          name="mail"
+                          type="text"
+                          class="form-control"
+                          id=""
+                          placeholder="يرجى إدخال بريدك"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="store-locator-form">
+                      <div class="form-group">
+                        <label for="">هاتفك</label>
+                        <input
+                          name="phone"
+                          type="text"
+                          class="form-control"
+                          id=""
+                          placeholder="يرجى إدخال هاتفك"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="store-locator-form">
+                      <div class="form-group">
+                        <textarea
+                          name="message"
+                          class="form-control"
+                          rows="6"
+                          placeholder="رسالة"
+                        ></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="alert" style="display: none">
+                      <strong></strong>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <div
+                        id="contactUScaptcha"
+                        class="g-recaptcha"
+                        data-theme="light"
+                      >
+                        <div style="width: 304px; height: 78px">
+                          <div>
+                            <iframe
+                              title="reCAPTCHA"
+                              width="304"
+                              height="78"
+                              role="presentation"
+                              name="a-wapr768fhfr4"
+                              frameborder="0"
+                              scrolling="no"
+                              sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+                              src="./ON_files/anchor(1).html"
+                            ></iframe>
+                          </div>
+                          <textarea
+                            id="g-recaptcha-response-1"
+                            name="g-recaptcha-response"
+                            class="g-recaptcha-response"
+                            style="
+                              width: 250px;
+                              height: 40px;
+                              border: 1px solid rgb(193, 193, 193);
+                              margin: 10px 25px;
+                              padding: 0px;
+                              resize: none;
+                              display: none;
+                            "
+                          ></textarea>
+                        </div>
+                        <iframe
+                          style="display: none"
+                          src="./ON_files/saved_resource(2).html"
+                        ></iframe>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-offset-9 col-md-2">
+                    <input name="country" type="hidden" value="EG" />
+                    <button
+                      type="submit"
+                      class="btn true-strength-btn true-strength-store-locator-search-btn"
+                    >
+                      أرسل رسالة
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- Modal -->
+      <div
+        class="store-modal modal fade"
+        id="myModal"
+        tabindex="-1"
+        role="dialog"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">×</span>
+              </button>
+              <h4 class="modal-title">Online Store List</h4>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn true-strength-btn true-strength-store-locator-search-btn"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <!-- <script src="./ON_files/jquery.min(1).js.download"></script> -->
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <!-- <script src="./ON_files/jquery.validate.js.download"></script> -->
+      <script src="./ON_files/additional-methods.min.js.download"></script>
+      <script src="./ON_files/bootstrap.min.js.download"></script>
+      <script src="./ON_files/intlTelInput.min.js.download"></script>
+      <script src="./ON_files/contact-form.js.download"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+      <script>
+    var map;
+    var userLat = "";
+    var userLng = "";
+    var userAddrGPS = 0;
+    var subShowTimer;
+
+    function getCount() {
+        $.ajax({
+            url: "https://0riginalon.com/api/method/original.api.get_verification_count",
+            type: "GET",
+            success: function (data) {
+                console.log(data);
+                $("#verifyCount").html(""); // Clear the current count
+                var numberStr = data.message.toString(); // Get the returned count from the Frappe method
+                for (var i = 0; i < numberStr.length; i++) {
+                    $("#verifyCount").append(
+                        '<span class="number">' + numberStr.charAt(i) + "</span>"
+                    );
+                }
+            },
+            error: function (xhr, status, error) {
+                console.error("Error fetching count: ", error);
+            },
+        });
+    }
+
+    if (!String.prototype.format) {
+        String.prototype.format = function () {
+            var args = arguments;
+            return this.replace(/{(\d+)}/g, function (match, number) {
+                return typeof args[number] != "undefined" ? args[number] : match;
+            });
+        };
+    }
+
+    jQuery(document).ready(function () {
+        preloadImage();
+        getUserLatLong();
+
+        $("#nearByStore").hide();
+        $("#location-details-area-id")
+            .parent()
+            .addClass("col-md-12")
+            .removeClass("col-md-5");
+
+        $("#code_check").validate({
+            errorElement: "span",
+            errorClass: "help-block",
+            onkeyup: false,
+            rules: {
+                code: {
+                    required: true,
+                    minlength: 8,
+                },
+                email: {
+                    email: true,
+                },
+            },
+            messages: {
+                code: {
+                    required: "يرجى إدخال رمز فعّال",
+                    minlength: "يرجى إدخال رمز فعّال",
+                },
+            },
+            highlight: function (element, errorClass, validClass) {
+                $(element)
+                    .closest(".form-group")
+                    .addClass("has-error has-feedback");
+                $(element).closest(".form-group").find("i.fa").remove();
+                $(element)
+                    .closest(".form-group")
+                    .append(
+                        '<i class="fa fa-exclamation fa-lg form-control-feedback"></i>'
+                    );
+            },
+            unhighlight: function (element, errorClass, validClass) {
+                $(element)
+                    .closest(".form-group")
+                    .removeClass("has-error has-feedback");
+                $(element).closest(".form-group").find("i.fa").remove();
+            },
+            submitHandler: function (form, event) {
+                event.preventDefault(); // Prevent the default form submission
+
+                // مباشرة عرض الرسالة
+                showResult({
+                    class: "success",
+                    status: "تم بنجاح",
+                    img: "assets/img/success-icon.png", // Update with your success icon path
+                    msg: "هذا المنتج أصلي", // Success message
+                });
+            },
+        });
+
+        var emailRegex =
+            /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+
+        $.validator.addMethod(
+            "regex",
+            function (value, element, regexp) {
+                var re = new RegExp(regexp);
+                return re.test(value);
+            },
+            "Please check your input."
+        );
+
+        $(document).on("focus", "#code_check input[name=code]", function () {
+            clearTimeout(subShowTimer);
+        });
+
+        // ... (بقية الكود كما هو)
+    });
+
+    function showResult(obj) {
+        console.log(obj);
+        $(".auth-result").hide();
+        $(".auth-result-wrapper").hide();
+        if (!$.isEmptyObject(obj)) {
+            var $elm = $("#message_card");
+            $elm.removeClass("success warning failed").addClass(obj.class);
+            $elm.find(".auth-status").html(obj.status);
+            $elm.find("img").attr("src", obj.img);
+            $elm.find("p").html(obj.msg);
+
+            $(".auth-result-wrapper").show();
+            $elm.fadeIn();
+
+            var $target = $(".auth-result").parent();
+
+            $("html, body").animate(
+                {
+                    scrollTop:
+                        $target.offset().top - $(".navbar-header").height() - 5,
+                },
+                1000,
+                "swing"
+            );
+        }
+    }
+	
+		function preloadImage() {
+			$("img").each(function () {
+				var img = new Image();
+				img.src = this.src;
+			});
+		}
+	
+		function getUserLatLong() {
+			if (navigator.geolocation) {
+				navigator.geolocation.getCurrentPosition(function (position) {
+					userLat = position.coords.latitude;
+					userLng = position.coords.longitude;
+					userAddrGPS = 1;
+					initialize();
+				}, initialize);
+			} else {
+				initialize();
+			}
+		}
+	
+		function initialize() {
+			var bounds = new google.maps.LatLngBounds();
+	
+			map = new google.maps.Map(document.getElementById("map_canvas"), {
+				mapTypeId: google.maps.MapTypeId.ROADMAP,
+				mapTypeControlOptions: {
+					style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+					position: google.maps.ControlPosition.TOP_CENTER,
+				},
+				zoomControlOptions: {
+					position: google.maps.ControlPosition.LEFT_TOP,
+				},
+				streetViewControlOptions: {
+					position: google.maps.ControlPosition.LEFT_TOP,
+				},
+			});
+	
+			var info_window = new google.maps.InfoWindow({
+				content: "loading",
+			});
+	
+			$(".location-zip:visible").each(function () {
+				var lat = $(this).find(".true-strength-loc-btn").data("latitude");
+				var lng = $(this).find(".true-strength-loc-btn").data("longitude");
+	
+				if (lat.length != 0) {
+					var html =
+						"<div class='locationPopUp'>" +
+						$(this).find(".location-item").html() +
+						"</div>";
+	
+					var marker = new google.maps.Marker({
+						position: new google.maps.LatLng(lat, lng),
+						animation: google.maps.Animation.DROP,
+						map: map,
+						html: html,
+					});
+	
+					bounds.extend(marker.position);
+	
+					$(this)
+						.find(".location-item")
+						.on("click", function () {
+							google.maps.event.trigger(marker, "click");
+							map.setZoom(17);
+							map.panTo(marker.position);
+						});
+	
+					google.maps.event.addListener(marker, "click", function () {
+						info_window.setContent(this.html);
+						info_window.open(map, this);
+					});
+				} else {
+					$(this).prop("disabled", true);
+				}
+			});
+	
+			map.fitBounds(bounds);
+		}
+	
+		$(document).on("click", ".location-zip button", function () {
+			var lat = $(this).data("latitude");
+			var lng = $(this).data("longitude");
+	
+			var end = new google.maps.LatLng(lat, lng);
+			var start = new google.maps.LatLng(userLat, userLng);
+	
+			var directionsService = new google.maps.DirectionsService();
+			var directionsDisplay = new google.maps.DirectionsRenderer();
+			var disSetElm = $(this).prev();
+	
+			directionsDisplay.setMap(map);
+			calculateAndDisplayRoute(
+				directionsService,
+				directionsDisplay,
+				start,
+				end,
+				disSetElm
+			);
+	
+			var $target = $("#map_canvas");
+	
+			$("html, body").animate(
+				{
+					scrollTop: $target.offset().top - $(".navbar-header").height(),
+				},
+				1000,
+				"swing"
+			);
+		});
+	
+		function calculateAndDisplayRoute(
+			directionsService,
+			directionsDisplay,
+			start,
+			end,
+			disSetElm
+		) {
+			directionsService.route(
+				{
+					origin: start,
+					destination: end,
+					travelMode: "DRIVING",
+				},
+				function (response, status) {
+					if (status === "OK") {
+						disSetElm.text(response.routes[0].legs[0].distance.text);
+						directionsDisplay.setDirections(response);
+					} else {
+						window.alert("فشلت عملية طلب الاتجاهات بسبب " + status);
+					}
+				}
+			);
+		}
+	
+		getCount();
+		setInterval(getCount, 1000 * 60);
+	
+		(function ($) {
+			$(document).ready(function () {
+				$("ul.dropdown-menu [data-toggle=dropdown]").on(
+					"click",
+					function (event) {
+						event.preventDefault();
+						event.stopPropagation();
+						$(this).parent().toggleClass("open");
+					}
+				);
+			});
+		})(jQuery);
+	</script>
+	
+<script>
+	function onSubmit(token) {
+	  document.getElementById("demo-form").submit();
+	}
+  </script>
+	
+
+      <script src="./ON_files/js"></script>
+      <script src="./ON_files/api.js.download"></script>
+      <script src="./ON_files/api(1).js.download" async="" defer=""></script>
+    </div>
+
+
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="footer-logo">
+                <img src="./ON_files/logo-sm.png" />
+              </div>
+              <div class="footer-text">
+                <p>© 2024<br />شركة أوبتيموم نيوتريشين</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="footer-social">
+                <p>اتصل بنا</p>
+                <ul class="social-tems">
+                  <li><a href="https://originalon.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                  <li><a href="https://originalon.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                  <li><a href="https://twitter.com/Team_Optimum" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="go-top">
+                <a href="https://originalon.com/#" class="smooth-scroll"><i class="fa fa-long-arrow-up" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <script>
+        function showResult(obj) {
+          $(".auth-result").hide();
+          $(".auth-result-wrapper").hide();
+          if (!$.isEmptyObject(obj)) {
+            var $elm = $("#message_card");
+            $elm.removeClass("success warning failed").addClass(obj.class);
+            $elm.find(".auth-status").html(obj.status);
+            $elm.find("img").attr("src", obj.img);
+            $elm.find("p").html(obj.msg);
+
+            $(".auth-result-wrapper").show();
+            $elm.fadeIn();
+
+            var $target = $(".auth-result").parent();
+            $("html, body").animate({
+              scrollTop: $target.offset().top - $(".navbar-header").height() - 5,
+            }, 1000, "swing");
+          }
+        }
+
+      
+
+    // Alert the user when the form is submitted 👌🤦‍♂️
+    $(document).ready(function() {
+    $("#code_check").on("submit", function(event) {
+        event.preventDefault();
+
+        // Retrieve the input values
+        const code = $('input[name="code"]').val().trim();
+        const name = $('input[name="name"]').val().trim();
+        const email = $('input[name="email"]').val().trim();
+        const agree = $('input[name="agree"]').is(':checked');
+
+        // Get the parent container
+        const resultWrapper = $('.auth-result-wrapper');
+
+        // Clear previous content in the resultWrapper to reset
+        resultWrapper.empty();
+
+        // Create the new alert div
+        const alertDiv = $('<div>').addClass('auth-result card testimonial-card').css('text-align', 'center');
+
+        const alertImg = $('<img>').css('max-width', '450px'); // Set image size
+
+        // Check product code, name, email, and agreement status
+        const codePattern = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{9,}$/;
+
+        if (!codePattern.test(code)) {
+            // If product code is invalid
+            alertImg.attr('src', './ON_files/image/failure.png');
+        } else if (!name || !email) {
+            // If name or email is empty
+            alertImg.attr('src', './ON_files/image/failure.png');
+        } else if (!agree) {
+            // If user does not agree to promotional offers
+            alertImg.attr('src', './ON_files/image/failure.png');
+        } else {
+            // If all conditions are met (success)
+            alertImg.attr('src', './ON_files/image/success.png');
+        }
+
+        // Add image to the alert
+        alertDiv.append(alertImg);
+
+        // Add the new alert to the resultWrapper
+        resultWrapper.append(alertDiv);
+
+        // Clear form fields after submission
+        // $('input[name="code"]').val('');
+        // $('input[name="name"]').val('');
+        // $('input[name="email"]').val('');
+        // $('input[name="agree"]').prop('checked', false);
+    });
+});
+
+
+
+      </script>
+    </div>
+    <script>
+      // تطبيق التمرير السلس لجميع الروابط التي تحتوي على class "smooth-scroll"
+      document.querySelectorAll('.smooth-scroll').forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault(); // منع السلوك الافتراضي
+          const targetId = this.getAttribute('href').substring(1); // إزالة علامة #
+          const targetElement = document.getElementById(targetId);
+          // التمرير السلس إلى القسم المطلوب
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        });
+      });
+    </script>
+    
+  </body>
+</html>
